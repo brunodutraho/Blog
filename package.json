@@ -1,0 +1,25 @@
+{
+  "name": "nome-projeto",
+  "version": "1.0.0",
+  "description": "Um projeto criado para o codeboost",
+  "main": "index.js",
+  "author": "Luiz Ricardo",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "browser-sync": "^2.29.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "gulp-imagemin": "^9.0.0",
+    "gulp-webp": "^5.0.0"
+  }
+}
