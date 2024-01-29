@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Atyp BL Text';
+    src: url('../fonts/AtypBLText-Regular.woff2') format('woff2'),
+        url('../fonts/AtypBLText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Atyp BL Text';
+    src: url('../fonts/AtypBLText-Medium.woff2') format('woff2'),
+        url('../fonts/AtypBLText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Atyp BL Text';
+    src: url('../fonts/AtypBLText-Bold.woff2') format('woff2'),
+        url('../fonts/AtypBLText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+  }
+  
+  @font-face {
+    font-family: 'Atyp BL Text';
+    src: url('../fonts/AtypBLText-Semibold.woff2') format('woff2'),
+        url('../fonts/AtypBLText-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: fallback;
+  }

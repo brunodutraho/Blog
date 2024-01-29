@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    font-family: 'Atyp BL Text', sans-serif;
+    font-size: 1rem;
+}
+
+img {
+    display: block;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
