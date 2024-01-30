@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 html {
@@ -11,6 +12,7 @@ html {
 body {
     font-family: 'Atyp BL Text', sans-serif;
     font-size: 1rem;
+    background-color: black;
 }
 
 img {

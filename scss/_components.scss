@@ -1,0 +1,204 @@
+.item-categorie {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        span {
+            color: $pink;
+        }
+    }
+
+    span {
+        opacity: 0.7;
+        color: #ffffff;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin-left: 0.8rem;
+        transition: color .3s ease;
+    }
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 28rem;
+    height: 3.6rem;
+
+    input {
+        flex: 1;
+        height: 100%;
+        background-color: transparent;
+        border: 1px solid rgba(153, 149, 166, 0.25);
+        border-radius: 4px 0 0 4px;
+        padding: 0 1.6rem;
+        color: #ffffff;
+        font-family: 'Atyp BL Text', sans-serif;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        &:focus {
+            border: 1px solid $pink;
+        }
+    }
+
+    button {
+        width: 36px;
+        height: 36px;
+        border-radius: 4px;
+        background: $pink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        margin-left: -0.5rem;
+        transition: filter .3s ease;
+
+        &:hover {
+            filter: brightness(0.8);
+        }
+    }
+}
+
+.card-post-lg {
+    display: block;
+    width: 100%;
+    max-width: 72.8rem;
+
+    .image {
+        width: 100%;
+        height: 32rem;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        margin-bottom: 3.5rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .info {
+        .top-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.6rem;
+
+            ul {
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+
+                li {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    
+
+                    &:not(:first-child) {
+                        margin-left: 4rem;
+                        &::after {
+                            content: "";
+                            width: 0.6rem;
+                            height: 0.6rem;
+                            background-color: #393C40;
+                            position: absolute;
+                            border-radius: 50%;
+                            left: -2.4rem;
+                        }
+                    }
+
+                    span {
+                        color: $gray-scale-05;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        line-height: 150%;
+                        margin-left: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        h4 {
+            max-width: 95%;
+        }
+    }
+}
+
+.card-post-xs {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 38.4rem;
+    height: 10.4rem;
+
+    .image {
+        width: 10.4rem;
+        height: 10.4rem;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .info {
+        margin-left: 3.2rem;
+        h6 {
+            margin-top: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+
+            li {
+                position: relative;
+                display: flex;
+                align-items: center;
+                
+
+                &:not(:first-child) {
+                    margin-left: 2.4rem;
+                    &::after {
+                        content: "";
+                        width: 0.6rem;
+                        height: 0.6rem;
+                        background-color: #393C40;
+                        position: absolute;
+                        border-radius: 50%;
+                        left: -1.5rem;
+                    }
+                }
+
+                span {
+                    color: $gray-scale-05;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+}
+
+
+
+.categorie {
+    color: $pink;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 105%;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
