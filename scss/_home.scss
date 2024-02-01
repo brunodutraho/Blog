@@ -30,9 +30,11 @@
 
                 .item-post {
                     position: relative;
+
                     &:not(:last-child) {
                         margin-bottom: 3.2rem;
                         padding-bottom: 3.2rem;
+
                         &::after {
                             content: "";
                             background: url("../img/line-divisor.svg") no-repeat center center;
@@ -45,6 +47,41 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.s-artigos {
+    background: linear-gradient(180deg, #0F0C1B 85.69%, rgba(15, 12, 27, 0) 100%);
+    padding-top: 11.7rem;
+    padding-bottom: 12rem;
+    border-bottom: 2px solid #1C162E;
+
+    .container {
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 4rem;
+            p {
+                display: flex;
+                align-items: center;
+                color: $gray-scale-06;
+                img {
+                    margin-left: 1.6rem;
+                }
+            }
+        }
+
+        .all {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 32px;
+            margin-bottom: 8rem;
+        }
+        .btn-primary {
+            display: block;
+            margin: 0 auto;
         }
     }
 }
