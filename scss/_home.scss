@@ -63,10 +63,12 @@
             align-items: center;
             justify-content: space-between;
             margin-bottom: 4rem;
+
             p {
                 display: flex;
                 align-items: center;
                 color: $gray-scale-06;
+
                 img {
                     margin-left: 1.6rem;
                 }
@@ -79,9 +81,80 @@
             grid-gap: 32px;
             margin-bottom: 8rem;
         }
+
         .btn-primary {
             display: block;
             margin: 0 auto;
         }
+    }
+}
+
+.s-podcast {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    border-bottom: 2px solid #1C162E;
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+
+        .ctrl-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .swiper-pagination {
+                position: relative;
+                bottom: 0;
+                width: auto;
+
+                .swiper-pagination-bullet {
+                    width: 2.4rem;
+                    height: 0.3rem;
+                    background-color: #F67ACB;
+                    border-radius: 0;
+                    opacity: 0.25;
+                    transition: opacity .6s ease;
+
+                    &-active {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .ctrl {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 6rem;
+
+                .btn {
+                    
+                    transition: opacity .3s ease;
+                    &.swiper-button-disabled {
+                        opacity: 0.5;
+                        pointer-events: none;
+                    }
+                }
+
+                .btn-prev {
+                    margin-right: 2rem;
+
+                    img {
+                        transform: rotate(180deg);
+
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .slide-podcast {
+        overflow: hidden;
+        position: relative;
     }
 }
