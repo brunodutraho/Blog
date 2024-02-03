@@ -1,0 +1,72 @@
+footer {
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 6.3rem;
+    &:before {
+        content: "";
+        width: 100%;
+        max-width: 121.6rem;
+        height: 2px;
+        background: url("../img/line-footer.svg") no-repeat center center;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -608px;
+    }
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .left-footer {
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            max-width: 82.9rem;
+
+            strong {
+                color: #ffffff;
+                font-weight: 700;
+                font-size: 1.4rem;
+                line-height: 150%;
+            }
+            p {
+                flex: 1;
+                color: rgba(255, 255, 255, 0.8);
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 150%;
+                margin-left: 8.4rem;
+            }
+        }
+
+        .right-footer {
+            display: flex;
+            align-items: center;
+            .group {
+                display: flex;
+                align-items: center;
+                margin-right: 7.1rem;
+                
+                span {
+                    color: #FFFFFF;
+                    font-size: 1.6rem;
+                    margin-right: 1.6rem;
+                }
+            }
+
+            button {
+                width: 3.7rem;
+                height: 3.7rem;
+                border: 2px solid rgba(255, 255, 255, 0.2);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: filter .3s ease;
+                &:hover {
+                    filter: brightness(0.5);
+                }
+            }
+        }
+    }
+}

@@ -8,6 +8,20 @@
 
 html {
     font-size: 62.5%; 
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $purple;
+        border-radius: 1rem;
+    }
 }
 
 body {
