@@ -468,4 +468,13 @@
             }
         }
     }
+
+    @media (max-width: 830px) {
+        .info {
+            bottom: 2rem;
+            .play {
+                opacity: 1;
+            }
+        }
+    }
 }
