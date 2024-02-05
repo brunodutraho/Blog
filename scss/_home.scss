@@ -93,6 +93,7 @@
                 .all {
                     .item-post {
                         margin-top: 3rem;
+
                         &:not(:last-child) {
                             &::after {
                                 background-size: cover;
@@ -111,6 +112,7 @@
             .left-container {
                 border-bottom: 1px solid rgba(255, 255, 255, 0.15);
                 padding-bottom: 4rem;
+
                 .title {
                     margin-bottom: 3rem;
                 }
@@ -124,7 +126,6 @@
     padding-top: 11.7rem;
     padding-bottom: 12rem;
     border-bottom: 2px solid #1C162E;
-    display: none;
 
     .container {
         .top {
@@ -154,6 +155,48 @@
         .btn-primary {
             display: block;
             margin: 0 auto;
+        }
+    }
+
+    @media (max-width: 1150px) {
+
+        .container {
+            .all {
+                grid-gap: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    @media (max-width: 830px) {
+
+        .container {
+            .all {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+    @media (max-width: 620px) {
+
+        .container {
+            .top {
+                flex-direction: column;
+                align-items: center;
+                h2 {
+                    margin-bottom: 1.5rem;
+                }
+            }
+            .all {
+                grid-template-columns: 1fr;
+                grid-gap: 3.2rem;
+                
+            }
+
+            .btn-primary {
+                width: 100%;
+                padding: 2.5rem 0rem;
+                font-size: 2rem;
+                margin-top: 4rem;
+            }
         }
     }
 }

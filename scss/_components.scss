@@ -336,6 +336,10 @@
             }
         }
     }
+
+    @media (max-width: 620px) {
+        max-width: 100%;
+    }
 }
 
 .categorie {
