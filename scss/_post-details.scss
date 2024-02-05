@@ -370,3 +370,27 @@
         }
     }
 }
+
+.s-post-semelhantes {
+    padding: 12rem 0;
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        p {
+            display: flex;
+            align-items: center;
+            img {
+                margin-left: 1.5rem;
+            }
+        }
+    }
+
+    .all {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3.2rem;
+        
+    }
+}
