@@ -21,3 +21,9 @@ var swiperPodcast = new Swiper(".slide-podcast", {
       behavior: 'smooth'
     })
   })
+
+  const btnMobile = document.getElementById('js-btn-hamburger');
+
+  btnMobile.addEventListener('click', () => {
+    btnMobile.classList.toggle('is-active');
+  })

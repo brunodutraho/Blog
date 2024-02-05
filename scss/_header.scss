@@ -14,20 +14,100 @@ header {
         align-items: center;
         justify-content: space-between;
 
+
+
         nav {
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex: 1;
             max-width: 83.2rem;
+
             ul {
                 display: flex;
                 align-self: center;
+
                 li {
                     &:not(:first-child) {
                         margin-left: 6.4rem;
                     }
                 }
+            }
+
+        }
+
+        .hamburger {
+            display: none;
+            margin-left: 4rem;
+
+            &.is-active {
+
+                .hamburger-inner,
+                .hamburger-inner::before,
+                .hamburger-inner::after {
+                    background-color: white;
+                }
+            }
+
+            .hamburger-inner,
+            .hamburger-inner::before,
+            .hamburger-inner::after {
+                background-color: white;
+            }
+
+
+        }
+    }
+
+    @media(max-width: 1100px) {
+        .container {
+
+            nav {
+                max-width: 74.2rem;
+            }
+        }
+    }
+
+    @media(max-width: 991px) {
+        height: 7rem;
+
+        .container {
+            justify-content: space-between;
+
+            a {
+                img {
+                    max-width: 15rem;
+                }
+            }
+
+            nav {
+                justify-content: flex-end;
+
+                ul {
+                    display: none;
+                }
+
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+        }
+    }
+
+    @media(max-width: 590px) {
+        height: 6rem;
+
+        .container {
+            nav {
+                .search {
+                    display: none;
+                }
+            }
+            .hamburger {
+                margin-left: 0;
+                padding: 0;
             }
         }
     }

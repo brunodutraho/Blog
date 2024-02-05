@@ -2,6 +2,8 @@ footer {
     position: relative;
     padding-top: 8rem;
     padding-bottom: 6.3rem;
+    display: none;
+    
     &:before {
         content: "";
         width: 100%;

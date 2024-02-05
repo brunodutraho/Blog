@@ -40,4 +40,16 @@ button {
     cursor: pointer;
 }
 
+section {
+    @media(max-width: 1200px) {
+        padding: 6rem 0rem;
+    }
+    @media(max-width: 768px) {
+        padding: 5rem 0rem;
+    }
+    @media(max-width: 560px) {
+        padding: 4rem 0rem;
+    }
+    
+}
 
