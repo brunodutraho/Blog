@@ -2,7 +2,6 @@ footer {
     position: relative;
     padding-top: 8rem;
     padding-bottom: 6.3rem;
-    display: none;
     
     &:before {
         content: "";
@@ -67,6 +66,48 @@ footer {
                 transition: filter .3s ease;
                 &:hover {
                     filter: brightness(0.5);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1150px) {
+        padding: 6rem 0rem;
+        .left-footer {
+            p {
+                margin-left: 3rem !important;
+                
+            }
+        }
+
+        .container {
+            .right-footer {
+                .group {
+                    margin-left: 3rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        &::before {
+            left: 0;
+            margin-left: 0;
+            background-size: cover;
+        }
+    }
+    @media (max-width: 830px) {
+        padding: 4rem 0rem;
+        .container {
+            flex-direction: column;
+            align-items: center;
+            .left-footer {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 3rem;
+                p {
+                    text-align: center;
+                    margin-top: 3rem;
                 }
             }
         }
