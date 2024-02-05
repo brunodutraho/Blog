@@ -136,12 +136,15 @@
             ul {
                 display: flex;
                 align-items: center;
+
                 li {
                     position: relative;
                     display: flex;
                     align-items: center;
+
                     &:not(:first-child) {
                         margin-left: 2.4rem;
+
                         &::before {
                             content: "";
                             width: 0.4rem;
@@ -153,12 +156,214 @@
                             margin-right: 2.4rem;
                         }
                     }
+
                     span {
                         margin-left: 1rem;
                         font-weight: 600;
                         font-size: 1.4rem;
                         line-height: 2.1rem;
                     }
+                }
+            }
+
+        }
+    }
+
+    .info-post-geral {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 8rem;
+
+        .left-content {
+            position: sticky;
+            top: 10rem;
+            flex: 1;
+            max-width: 23.6rem;
+
+            h6 {
+                color: $gray-scale-01;
+            }
+
+            ul {
+                position: relative;
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 0.2rem;
+                    background: url("../img/line-topics.svg") no-repeat center center;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                li {
+                    &:not(:last-child) {
+
+                        margin-bottom: 1.6rem;
+                    }
+
+                    a {
+                        display: flex;
+                        align-items: flex-start;
+
+
+                        &.active,
+                        &:hover {
+                            &:before {
+                                background-color: $pink;
+                            }
+
+                            span {
+                                color: $gray-scale-01;
+
+                            }
+                        }
+
+                        &:before {
+                            content: "";
+                            width: 0.4rem;
+                            height: 0.4rem;
+                            display: inline-block;
+                            border-radius: 50%;
+                            background-color: #9995A6;
+                            margin-top: 1.1rem;
+                            margin-right: 1.6rem;
+                            transition: background-color .3s ease;
+                        }
+
+                        span {
+                            color: $gray-scale-04;
+                            line-height: 150%;
+                            font-size: 1.6rem;
+                            font-weight: 500;
+                            flex: 1;
+                            transition: color .3s ease;
+                        }
+                    }
+                }
+            }
+
+            button {
+                display: flex;
+                align-items: center;
+                margin-top: 2rem;
+
+                &:hover {
+
+                    span {
+                        color: $pink;
+                    }
+                }
+
+                span {
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    line-height: 100%;
+                    color: $gray-scale-01;
+                    margin-left: 1.6rem;
+                    transition: color .3s ease;
+                }
+            }
+        }
+
+        .right-content {
+            flex: 1;
+            max-width: 80rem;
+            margin-left: 7.6rem;
+
+            .content-post {
+                width: 100%;
+                border-bottom: 2px solid rgba(28, 22, 46, 0.1);
+                padding-bottom: 4rem;
+                margin-bottom: 4rem;
+
+                blockquote {
+                    border-left: 2px solid rgba(92, 31, 166, 0.15);
+                    padding-left: 2.4rem;
+                    margin-bottom: 4rem;
+
+                    p {
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        line-height: 175%;
+                        color: $gray-scale-03;
+                        margin-bottom: 0;
+
+                    }
+
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: $gray-scale-01;
+                    margin-bottom: 2.4rem;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    line-height: 175%;
+                    color: $gray-scale-03;
+                    margin-bottom: 1.6rem;
+
+                    a {
+                        text-decoration: underline;
+                        transition: filter .3s ease;
+
+                        &:hover {
+                            filter: brightness(0.5);
+                        }
+                    }
+                }
+
+                ul {
+                    padding-left: 3rem;
+                    margin-bottom: 4rem;
+
+                    li {
+                        list-style-type: disc;
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        line-height: 175%;
+                        color: $gray-scale-03;
+
+                        &:not(:last-child) {
+                            margin-bottom: 1.6rem;
+                        }
+
+                    }
+                }
+            }
+
+            .share {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                strong {
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    line-height: 100%;
+                    color: $gray-scale-01;
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+
+                    li {
+                        &:not(:first-child) {
+                            margin-left: 3.2rem;
+                        }
+                    }
+
+                    
                 }
             }
 
