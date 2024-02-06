@@ -530,6 +530,7 @@
                 .content-post {
                     padding-bottom: 2rem;
                     margin-bottom: 2rem;
+
                     blockquote {
                         padding-left: 1.5rem;
                         margin-bottom: 2rem;
@@ -551,6 +552,7 @@
 
                     ul {
                         margin-bottom: 1.5rem;
+
                         li {
                             font-size: 1.6rem;
 
@@ -564,9 +566,10 @@
                 .share {
                     flex-direction: column;
                     align-items: flex-start;
-                    
+
                     ul {
                         margin-top: 1.5rem;
+
                         li {
                             &:not(:first-child) {
                                 margin-left: 2rem;
@@ -613,5 +616,23 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 3.2rem;
 
+    }
+
+    @media (max-width: 768px) {
+        .all {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 560px) {
+
+        .top {
+            flex-direction: column;
+            h2 {
+                margin-bottom: 2rem;
+            }
+        }
+        .all {
+            grid-template-columns: 1fr;
+        }
     }
 }
