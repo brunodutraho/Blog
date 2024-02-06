@@ -56,8 +56,13 @@ btnScrollTop.addEventListener('click', () => {
   })
 })
 
+
+//Abrir menu mobile
 const btnMobile = document.getElementById('js-btn-hamburger');
 
 btnMobile.addEventListener('click', () => {
   btnMobile.classList.toggle('is-active');
+  document.documentElement.classList.toggle('menu-opened')
 })
+
+
